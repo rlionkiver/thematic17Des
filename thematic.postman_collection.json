@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "83aba905-b4da-459c-a1cb-1e970bb136a0",
+		"name": "thematic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39622337"
+	},
+	"item": [
+		{
+			"name": "XML",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<system> \r\n    <persona>Dokter Hewan</persona>\r\n      <task>Memberikan penjelasan seberapa panjang hidup rata-rata mamalia.\r\n        </task>\r\n</system>\r\n<user>  \r\n    <questions>\r\n        Mengapa kucing saya ada yang dapat hidup 2 tahun saja dan ada yang dapat hidup 10 tahun?\r\n    </questions>\r\n</user>\r\n",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/analyze-xml",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"analyze-xml"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "JSON",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"persona\": \"Dosen Informatika yang lulusan S3 Ekonomi\", \r\n    \"task\": \"Memberikan penjelasan detail mengenai apa yang dimaksud dengan WEB3 dalam dunia teknologi dan ekonomi di Indonesia.\", \r\n    \"questions\": \"Mengapa banyak sekali perlombaan di tahun 2025 mengangkat WEB3 untuk persayaratannya?\" \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/analyze-json",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"analyze-json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Perbandingan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"model\": \"llama-3.1-8b-instant\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/membandingkan",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"membandingkan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TestCaseProduk",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/snailly",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"snailly"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
