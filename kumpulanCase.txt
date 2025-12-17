@@ -1,0 +1,14 @@
+INI SPENULISAN DALAM BENTUK STRING DENGAN BEBERAPA FORMAT
+
+CASE 1:
+{
+  "format": "XML",
+  "prompt": "<system>\n  <persona>Dosen Informatika yang lulusan S3 Ekonomi</persona>\n  <task>Memberikan penjelasan detail mengenai apa yang dimaksud dengan WEB3 dalam dunia teknologi dan ekonomi di Indonesia.</task>\n</system>\n<user>\n  <questions>Mengapa banyak sekali perlombaan di tahun 2025 mengangkat WEB3 untuk persayaratannya?</questions>\n</user>"
+}
+{
+  "format": "JSON",
+  "prompt": "{ \"persona\": \"Dosen Informatika yang lulusan S3 Ekonomi\", \"task\": \"Memberikan penjelasan detail mengenai apa yang dimaksud dengan WEB3 dalam dunia teknologi dan ekonomi di Indonesia.\", \"questions\": \"Mengapa banyak sekali perlombaan di tahun 2025 mengangkat WEB3 untuk persayaratannya?\" }"
+}
+
+CASE 2:
+
